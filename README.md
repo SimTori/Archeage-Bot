@@ -9,3 +9,4 @@ V1.0
 ## 문재점
 포맷 형식을 지정하지 않아 줄맞춤이 이상함
 즉, 가독성이 떨어짐
+![image](https://user-images.githubusercontent.com/51079816/93016122-d8babd00-f5f9-11ea-85d3-bfc57e0a9e34.png)
