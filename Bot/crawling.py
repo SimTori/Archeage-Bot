@@ -1,4 +1,3 @@
-import pandas as pd
 from bs4 import BeautifulSoup
 import requests
 import pprint
@@ -41,7 +40,7 @@ def crwaling():
                 break
         for i in range(0, 4):
             if len(sp) != 20:
-                sp.insert(len(sp), '　　　　　　　　　')
+                sp.insert(len(sp), '-------------------------')
             else:
                 break
 

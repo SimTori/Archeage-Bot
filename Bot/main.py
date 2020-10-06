@@ -2,13 +2,22 @@ from discord.ext import commands
 import discord as di
 import crawling
 
-TOKEN = "NzUxMDY2OTM3OTQ1MjI3MzM2.X1DrmA.Hkr_zeq2jK92OuKSLm3GRyER-EQ"
+TOKEN = "#"
 clinet = commands.Bot(command_prefix="/")
 
 def insertL(data, j, k):
     st = ''
     for i in range(j, k):
-        st = st + str(data[0][i]) + '　　　' + str(data[1][i]) + '\n'
+        space = ''
+        if len(data[0][i]) < 13:
+            for q in range(len(data[0][i]), 15):
+                space = space + '　'
+        elif len(data[0][i]) == 13:
+            space = space + '　　'
+        else:
+            space = space + '　　'
+
+        st = st + str(data[0][i]) + space + str(data[1][i]) + '\n'
     return st
 
 @clinet.event
